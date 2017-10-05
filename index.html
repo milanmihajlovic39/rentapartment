@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Rent apartment with best prices!">
+    <meta name="keywords" content="Apartment, Apartment with best price, Rent apartment">
+    <meta name="author" content="Milan Mihajlovic">
+    <meta property="og:image" content="http://www.audiologistsalaryhub.com/wp-content/uploads/2015/02/Rent-Apartments.jpg" />
+    <link rel="icon" type="image/png" href="https://cdn2.iconfinder.com/data/icons/places-4/100/home_place_marker_location_house_apartment-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+  </head>
+  <body>
+
+
+    <header>
+    <div class="container">
+      <div id="branding"> 
+      	<img src="https://cdn2.iconfinder.com/data/icons/places-4/100/home_place_marker_location_house_apartment-512.png" alt="Cheetah!" class="img-circle" />
+      </div>
+      <nav>
+        <ul>
+          <li class="current" ><a href="index.html">My Rent</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">List a property</a></li>
+          <li><a href="#">Search</a></li>
+          <li class="reg_link"><a href="#">Register</a></li>
+          <li ><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="centerMe">
+  <div class='cta' >
+    <span class="tooltip swing" data-title="Find apartments in your city &#9812;">Search city</span>
+    <form>
+      <div class='input'>
+        <input placeholder='City name'>
+      </div>
+      <div class='button'>
+        <button disabled='disabled' type='submit'>Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+  <footer class="footer">
+   <p> Milan Mihajlović, Copyright &copy; 2017</p>
+  </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script>
+     	
+     	    $(document).ready(function(){
+        $(".cta span").click(function(){
+    $(".cta:not(.sent)").addClass("active");
+    $("input").focus();
+});
+
+var regex = /^[a-zA-Z ]*$/;
+
+$("input").on('input', function(){
+    if(regex.test($(this).val())) {
+        $("button").removeAttr("disabled"); }
+    else {
+        $("button").attr("disabled", "disabled"); }
+});
+
+$("form").submit(function(x){
+    x.preventDefault();
+    if(regex.test($("input").val())) {
+        $(".cta span").text("Success!");
+        $(".cta").removeClass("active").addClass("sent");
+    }
+});
+    });
+
+     </script>
+ 	
+
+  </body>
+
+</html>
+
+
