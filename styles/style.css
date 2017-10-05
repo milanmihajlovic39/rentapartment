@@ -3,7 +3,7 @@
 body {
   height: 100%;
   font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
-  background-color:   #00adee;
+  
   /* Margin bottom by footer height */
   margin: 0;
 
@@ -73,13 +73,15 @@ header a:hover {
 
 
 
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: static;
+    bottom: 0;
+    padding-bottom: 2px;
+    padding-top: 4px;
   /* Set the fixed height of the footer here */
   
-  background-color: #00adee;
+  background-color: #07374a;
   color: #f0f0e6; }
 
 .footer p{
@@ -89,7 +91,13 @@ header a:hover {
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
-
+#welcome{
+  
+  background: url('../img/bg1.jpg') ;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
 .centerMe {
   position: absolute;
   top: 55%;
