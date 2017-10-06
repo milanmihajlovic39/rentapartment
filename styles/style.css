@@ -77,17 +77,23 @@ header a:hover {
 .footer {
     position: static;
     bottom: 0;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
     padding-top: 4px;
+    margin-bottom: 0;
   /* Set the fixed height of the footer here */
-  
+  height: 150px;
   background-color: #07374a;
   color: #f0f0e6; }
 
 .footer p{
   text-align: center;
+  margin-top: 20px;
   
 }
+.footer hr{
+  width: 50%;
+}
+
 
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
@@ -97,13 +103,42 @@ header a:hover {
   background-size: cover;
   height: 600px;
   width: 100%;
+  text-align: center;
+  display: flex;
+  font-weight: thick;
 }
+
+#popular h1{
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.grid-4{
+  width: 24%;
+  display: inline-block;
+}
+
+.popular-city a{
+
+  color: #07374a;
+}
+
+.popular-city{
+  margin-top: 30px;
+   margin-bottom: 100px;
+   text-align: center;
+}
+.small-hr{
+  width: 50%;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
 .centerMe {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: auto;
+  padding-bottom: 100px;
+
 }
 
 ::-webkit-input-placeholder {
@@ -111,6 +146,7 @@ header a:hover {
 }
 
 .cta {
+  margin: auto;
   background: #fff;
   font-weight: bold;
   border-radius: 25px;
@@ -296,4 +332,49 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 .tooltip.swing:hover:after {
   opacity: 1;
   transform: translate3d(0,0,0) rotate3d(1,1,1,0deg);
+}
+
+
+#about{
+  height: 620px;
+  background-color:   #F5F5DC;
+  width: 100%;
+}
+
+
+.about-text{
+  float: left;
+  margin-top: 100px;
+ 
+  width: 40%;
+}
+
+#about img{
+  float: right;
+  width: 50%;
+  margin-top: 100px;
+}
+
+#about hr{
+  margin-top: 50px;
+  width: 80%;
+}
+
+#mobile{
+  height: 620px;
+  background-color:   #F5F5DC;
+  width: 100%;
+}
+
+.mobile-text{
+  float: right;
+  margin-top: 100px;
+ 
+  width: 40%;
+}
+
+#mobile img{
+  float: left;
+  width: 50%;
+  margin-top: 100px;
 }
